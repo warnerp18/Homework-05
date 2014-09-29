@@ -1,12 +1,7 @@
 .container {
-	display: inline-flex;
-	flex-direction: row;
-	float: left;
+	display: absolute;
 	height: 100%;
 	width: 100%;
-
-
-	
 
 	display: -webkit-box;
 	display: -moz-box;
@@ -17,43 +12,34 @@
 
 .item	{
 	border: .1em solid rgb(82,150,210);
-	float: left;
-	display: inline-flex;
 	position: static;
 
 
 	margin: 1.5em;
-	width: 200px;
-	height: 50%;
-	padding: 0em;
-
-
+	max-width: 100%;
+	height: 100%;
 
 }
 
 li {
 	list-style: none;
-
-
-
+	direction: ltr;
+	display: inline-flex;
 	
 }
+
 img {
-	height: 33%;
-	width: 30%;
-	
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	left: -20px;
 }
 
 span {
 	border: .1em solid rgb(82,150,210);
-	float: left;
-	direction: ltr;
-	display: inline-flex;
 	height: 100%;
+	float: left;
 
-	
 }
 
-.flex-item-small {
-	flex: 1 100%;
-}
