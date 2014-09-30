@@ -1,45 +1,142 @@
-.container {
-	display: absolute;
-	height: 100%;
-	width: 100%;
-
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	
+div {
+	box-sizing: border-box;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	padding: 2em;
+	text-align: justify;
+	vertical-align: top;
+	border: .15em solid rgb(73,145, 208);
+	margin: 1em;
 }
-
-.item	{
-	border: .1em solid rgb(82,150,210);
-	position: static;
-
-
-	margin: 1.5em;
-	max-width: 100%;
-	height: 100%;
-
-}
-
-li {
-	list-style: none;
-	direction: ltr;
-	display: inline-flex;
-	
-}
-
-img {
-	display: block;
-	position: relative;
-	height: 100%;
-	width: 100%;
-	left: -20px;
+.one{
+	position: absolute;
+	display: inline-block;
 }
 
 span {
-	border: .1em solid rgb(82,150,210);
-	height: 100%;
-	float: left;
+	position: absolute;
+	width: 200px;
+	margin: 0em;
+	bottom: 0;
+	left: 0;
+}
+
+img {
+	height: 130px;		
+	transform: translate (-50% -50%);
+	max-width: 100%;
+	border: 0;
+	position: relative;
+	bottom: 10px;
+}
+
+}
+ul {
+	list-style: none;
+	display: block:;
+	width: 200px;
+	
+}
+
+li {
+	text-align: center;
+	list-style: none;
+}
+
+
+.square {
+	margin: -2.8px;
+	width: 37px;
+	height: 37px;
+	border: .15em solid rgb(73,145,208);
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	color: rgb(73,145,207);
+}
+
+.tshirt {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: .15em solid rgb(73,145, 208);
+
 
 }
 
+.tshirt:hover {
+	background-color: rgb(73,145,207);
+	color: white;
+}
+
+.square:hover {
+	background-color: rgb(73,145,207);
+	color: white;
+}
+
+.reload {
+	margin-bottom: -6px; 
+}
+
+#shirtsize {
+	border: .15em solid rgb(73,145,208);
+	height: 90px;
+	width: 25px;
+	position: absolute;
+	bottom: 120%;
+}
+
+#color {
+	border: .15em solid rgb(73,145,208);
+	height: 35px;
+	width: 40px;
+	position: absolute;
+	bottom: 120%;
+}
+li:nth-child(4){
+	top: 21px;
+}
+
+.shirtcolor {
+	margin: 0;
+	height: 36%;
+	width: 34%;
+	display: inline-block;
+}
+
+.blue {
+	height: 20px;
+	width: 20px;
+	background-color: rgb(108,171,226);
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shirtcolor:first-child {
+	background-color: rgb(108,171,226);
+}
+
+.shirtcolor:nth-child(2){
+	background-color: rgb(203,106,154);
+}
+
+.shirtcolor:nth-child(3){
+	background-color: rgb(214,163,103);
+}
+
+.shirtcolor:nth-child(4){
+	background-color: rgb(120,174,126);
+}
+
+.size {
+	height: 18px;
+	width: 25px; 
+	background-color: red;
+	margin: 5px;
+	position: relative;
+	right: 5px;
+	top: -3px;
+}
